@@ -280,7 +280,11 @@ After Login:
 
     http://vehicle-rental/v1/auth/login
 
+
+// Faza
         #Admin
+[1]         Create Docker Compose
+            
             CREATE      --> POST    {root.api}/{version}/vehicles/
             READ        --> GET     {root.api}/{version}/vehicles/
             READById    --> GET     {root.api}/{version}/vehicles/id
@@ -288,6 +292,10 @@ After Login:
                             POST    {root.api}/{version}/vehicles/update/id
             DELETE      --> GET     {root.api}/{version}/vehicles/delete/id
 
+
+// Apud
+[2]         Generate monthly rental reports
+            Trigger to update vehicle availability after rental confirmation
             READ        --> GET     {root.api}/{version}/rentals/
             READById    --> GET     {root.api}/{version}/rentals/id
 
@@ -297,6 +305,22 @@ After Login:
             READ        --> GET     {root.api}/{version}/payments/
             READById    --> GET     {root.api}/{version}/payments/id
 
+
+// Nabila
         #Customer
+[3]         READ        --> GET     {root.api}/{version}/vehicles/
+            READById    --> GET     {root.api}/{version}/vehicles/id
+
+            CREATE      --> POST    {root.api}/{version}/rentals/
+            READ        --> GET     {root.api}/{version}/rentals/
+            READById    --> GET     {root.api}/{version}/rentals/id
+
+            READ        --> GET     {root.api}/{version}/invoices/
+            READById    --> GET     {root.api}/{version}/invoices/id
+
+            READ        --> GET     {root.api}/{version}/payments/
+            READById    --> GET     {root.api}/{version}/payments/id
             UPDATE      --> GET     {root.api}/{version}/payments/update/id
                             POST    {root.api}/{version}/payments/update/id
+
+

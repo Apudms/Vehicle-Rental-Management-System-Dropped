@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Rapidbootcamp\\mini and group project\\rental_car\\code\\Vehicle-Rental-Management-System\\VehicleRental\\VehicleRentalWeb\\VehicleRentalWeb.csproj": {}
+    "D:\\Projects\\Bootcamp2024\\Vehicle-Rental-Management-System\\VehicleRental\\VehicleRentalWeb\\VehicleRentalWeb.csproj": {}
   },
   "projects": {
-    "D:\\Rapidbootcamp\\mini and group project\\rental_car\\code\\Vehicle-Rental-Management-System\\VehicleRental\\VehicleRentalWeb\\VehicleRentalWeb.csproj": {
+    "D:\\Projects\\Bootcamp2024\\Vehicle-Rental-Management-System\\VehicleRental\\VehicleRentalWeb\\VehicleRentalWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Rapidbootcamp\\mini and group project\\rental_car\\code\\Vehicle-Rental-Management-System\\VehicleRental\\VehicleRentalWeb\\VehicleRentalWeb.csproj",
+        "projectUniqueName": "D:\\Projects\\Bootcamp2024\\Vehicle-Rental-Management-System\\VehicleRental\\VehicleRentalWeb\\VehicleRentalWeb.csproj",
         "projectName": "VehicleRentalWeb",
-        "projectPath": "D:\\Rapidbootcamp\\mini and group project\\rental_car\\code\\Vehicle-Rental-Management-System\\VehicleRental\\VehicleRentalWeb\\VehicleRentalWeb.csproj",
-        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "D:\\Rapidbootcamp\\mini and group project\\rental_car\\code\\Vehicle-Rental-Management-System\\VehicleRental\\VehicleRentalWeb\\obj\\",
+        "projectPath": "D:\\Projects\\Bootcamp2024\\Vehicle-Rental-Management-System\\VehicleRental\\VehicleRentalWeb\\VehicleRentalWeb.csproj",
+        "packagesPath": "C:\\Users\\Rapid Teknologi\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Bootcamp2024\\Vehicle-Rental-Management-System\\VehicleRental\\VehicleRentalWeb\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Rapid Teknologi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -74,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

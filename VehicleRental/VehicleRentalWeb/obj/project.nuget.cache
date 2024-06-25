@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "AyYUtlfqNtM=",
+  "dgSpecHash": "1/Mnjmv3xys=",
   "success": true,
-  "projectFilePath": "D:\\Rapidbootcamp\\mini and group project\\rental_car\\code\\Vehicle-Rental-Management-System\\VehicleRental\\VehicleRentalWeb\\VehicleRentalWeb.csproj",
+  "projectFilePath": "D:\\Projects\\Bootcamp2024\\Vehicle-Rental-Management-System\\VehicleRental\\VehicleRentalWeb\\VehicleRentalWeb.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\USER\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.20.1\\microsoft.visualstudio.azure.containers.tools.targets.1.20.1.nupkg.sha512"
+    "C:\\Users\\Rapid Teknologi\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.20.1\\microsoft.visualstudio.azure.containers.tools.targets.1.20.1.nupkg.sha512"
   ],
   "logs": []
 }
