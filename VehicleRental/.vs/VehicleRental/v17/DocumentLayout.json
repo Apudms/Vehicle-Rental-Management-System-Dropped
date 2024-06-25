@@ -1,37 +1,12 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Projects\\Bootcamp2024\\Vehicle-Rental-Management-System\\VehicleRental\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{AA13A9C6-72C3-40E7-86D1-1B315841D6A9}|VehicleManagement\\VehicleManagement.csproj|d:\\projects\\bootcamp2024\\vehicle-rental-management-system\\vehiclerental\\vehiclemanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA13A9C6-72C3-40E7-86D1-1B315841D6A9}|VehicleManagement\\VehicleManagement.csproj|solutionrelative:vehiclemanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "WorkspaceRootPath": "D:\\Rapidbootcamp\\mini and group project\\rental_car\\code\\Vehicle-Rental-Management-System\\VehicleRental\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Projects\\Bootcamp2024\\Vehicle-Rental-Management-System\\VehicleRental\\VehicleManagement\\Program.cs",
-              "RelativeDocumentMoniker": "VehicleManagement\\Program.cs",
-              "ToolTip": "D:\\Projects\\Bootcamp2024\\Vehicle-Rental-Management-System\\VehicleRental\\VehicleManagement\\Program.cs",
-              "RelativeToolTip": "VehicleManagement\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T06:34:04.746Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }
