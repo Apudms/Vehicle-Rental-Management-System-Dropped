@@ -1,0 +1,300 @@
+API Planning
+
+{root.api}/{version}/{groupping}/{endpoint}
+
+Sample:
+http://vehicle-rental/v1/vehicles
+
+Status response
+200 - OK                        
+201 - CREATE                    
+400 - BAD REQUEST
+401 - UNAUTHORIZED
+403 - FORBIDDEN
+404 - NOT FOUND
+500 - INTERNAL SERVER ERROR
+502 - BAD GATEWAY
+
+
+Before Login:
+http://vehicle-rental/v1/auth/login
+
+After Login:
+{
+    #Admin:
+    {
+        {
+            http://vehicle-rental/v1/vehicles
+
+            req:
+            {
+                Make: Make,
+                Model: Model,
+                Year: "yyyy",
+                RentalPrice: decimal,
+                AvailabilityStatus: 1  //0 isNotAvailable
+            }
+
+            res:
+            {
+                data:
+                [
+                    Id: Vehicles.Id,
+                    Make: Vehicles.Make,
+                    Model: Vehicles.Model,
+                    Year: Vehicles.Year,
+                    RentalPrice: Vehicles.RentalPrice,
+                    AvailabilityStatus: Vehicles.AvailabilityStatus      
+                ]
+            }
+
+            codeStatusResponse: 200
+        },
+        {
+            CREATE      --> POST    {root.api}/{version}/vehicles/
+            READ        --> GET     {root.api}/{version}/vehicles/
+            READById    --> GET     {root.api}/{version}/vehicles/id
+            UPDATE      --> GET     {root.api}/{version}/vehicles/update/id
+                            POST    {root.api}/{version}/vehicles/update/id
+            DELETE      --> GET     {root.api}/{version}/vehicles/delete/id
+        },
+        {
+            http://vehicle-rental/v1/rentals
+
+            req:
+            {
+                RentalId: RentalId,
+                CustomerId: CustomerId,
+                VehicleId: VehicleId,
+                RentalDate: RentalDate,
+                ReturnDate: ReturnDate,
+                Status: Status  //1 Pending, 2 Confirmed, 3 Returned, Cancelled
+            }
+
+            res:
+            {
+                data:
+                [
+                    Id: Rentals.Id,
+                    CustomerId: Rentals.CustomerId,
+                    VehicleId: Rentals.VehicleId,
+                    RentalDate: Rentals.RentalDate,
+                    ReturnDate: Rentals.ReturnDate,
+                    Status: Rentals.Status  //1 Pending, 2 Confirmed, 3 Returned, Cancelled  
+                ]
+            }
+
+            codeStatusResponse: 200
+        },
+        {
+            READ        --> GET     {root.api}/{version}/rentals/
+            READById    --> GET     {root.api}/{version}/rentals/id
+        },
+        {
+            http://vehicle-rental/v1/invoices
+
+            req:
+            {
+                InvoiceId: InvoiceId,
+                RentalId: RentalId,
+                Amount: Amount,
+                InvoiceDate: InvoiceDate,
+            }
+
+            res:
+            {
+                data:
+                [
+                    InvoiceId: Invoices.InvoiceId,
+                    RentalId: Invoices.RentalId,
+                    Amount: Invoices.Amount,
+                    InvoiceDate: Invoices.InvoiceDate,
+                ]
+            }
+
+            codeStatusResponse: 200
+        },
+        {
+            READ        --> GET     {root.api}/{version}/invoices/
+            READById    --> GET     {root.api}/{version}/invoices/id
+        },
+        {
+            http://vehicle-rental/v1/payments
+
+            req:
+            {
+                paymentId: paymentId,
+                InvoiceId: InvoiceId,
+                Amount: Amount,
+                paymentDate: paymentDate,
+            }
+
+            res:
+            {
+                data:
+                [
+                    paymentId: payments.paymentId,
+                    InvoiceId: payments.InvoiceId,
+                    Amount: payments.Amount,
+                    paymentDate: payments.paymentDate,
+                ]
+            }
+
+            codeStatusResponse: 200
+        },
+        {
+            READ        --> GET     {root.api}/{version}/payments/
+            READById    --> GET     {root.api}/{version}/payments/id
+        },
+
+    },
+    #Customer:
+    {
+        
+        {
+            http://vehicle-rental/v1/vehicles
+
+            req:
+            {
+                Make: Make,
+                Model: Model,
+                Year: "yyyy",
+                RentalPrice: decimal,
+                AvailabilityStatus: 1  //0 isNotAvailable
+            }
+
+            res:
+            {
+                data:
+                [
+                    Id: Vehicles.Id,
+                    Make: Vehicles.Make,
+                    Model: Vehicles.Model,
+                    Year: Vehicles.Year,
+                    RentalPrice: Vehicles.RentalPrice,
+                    AvailabilityStatus: Vehicles.AvailabilityStatus      
+                ]
+            }
+
+            codeStatusResponse: 200
+        },
+        {
+            READ        --> GET     {root.api}/{version}/vehicles/
+            READById    --> GET     {root.api}/{version}/vehicles/id
+        },
+        {
+            http://vehicle-rental/v1/rentals
+
+            req:
+            {
+                RentalId: RentalId,
+                CustomerId: CustomerId,
+                VehicleId: VehicleId,
+                RentalDate: RentalDate,
+                ReturnDate: ReturnDate,
+                Status: Status  //1 Pending, 2 Confirmed, 3 Returned, Cancelled
+            }
+
+            res:
+            {
+                data:
+                [
+                    Id: Rentals.Id,
+                    CustomerId: Rentals.CustomerId,
+                    VehicleId: Rentals.VehicleId,
+                    RentalDate: Rentals.RentalDate,
+                    ReturnDate: Rentals.ReturnDate,
+                    Status: Rentals.Status  //1 Pending, 2 Confirmed, 3 Returned, Cancelled  
+                ]
+            }
+
+            codeStatusResponse: 200
+        },
+        {
+            CREATE      --> POST    {root.api}/{version}/rentals/
+            READ        --> GET     {root.api}/{version}/rentals/
+            READById    --> GET     {root.api}/{version}/rentals/id
+        },
+        {
+            http://vehicle-rental/v1/invoices
+
+            req:
+            {
+                InvoiceId: InvoiceId,
+                RentalId: RentalId,
+                Amount: Amount,
+                InvoiceDate: InvoiceDate,
+            }
+
+            res:
+            {
+                data:
+                [
+                    InvoiceId: Invoices.InvoiceId,
+                    RentalId: Invoices.RentalId,
+                    Amount: Invoices.Amount,
+                    InvoiceDate: Invoices.InvoiceDate,
+                ]
+            }
+
+            codeStatusResponse: 200
+        },
+        {
+            READ        --> GET     {root.api}/{version}/invoices/
+            READById    --> GET     {root.api}/{version}/invoices/id
+        },
+        {
+            http://vehicle-rental/v1/payments
+
+            req:
+            {
+                paymentId: paymentId,
+                InvoiceId: InvoiceId,
+                Amount: Amount,
+                paymentDate: paymentDate,
+            }
+
+            res:
+            {
+                data:
+                [
+                    paymentId: payments.paymentId,
+                    InvoiceId: payments.InvoiceId,
+                    Amount: payments.Amount,
+                    paymentDate: payments.paymentDate,
+                ]
+            }
+
+            codeStatusResponse: 200
+        },
+        {
+            READ        --> GET     {root.api}/{version}/payments/
+            READById    --> GET     {root.api}/{version}/payments/id
+        },
+    }
+}
+
+
+
+#endpoint
+
+    #Admin
+        CREATE      --> POST    {root.api}/{version}/vehicles/
+        READ        --> GET     {root.api}/{version}/vehicles/
+        READById    --> GET     {root.api}/{version}/vehicles/id
+        UPDATE      --> GET     {root.api}/{version}/vehicles/update/id
+                        POST    {root.api}/{version}/vehicles/update/id
+        DELETE      --> GET     {root.api}/{version}/vehicles/delete/id
+
+        READ        --> GET     {root.api}/{version}/rentals/
+        READById    --> GET     {root.api}/{version}/rentals/id
+
+        READ        --> GET     {root.api}/{version}/invoices/
+        READById    --> GET     {root.api}/{version}/invoices/id
+
+        READ        --> GET     {root.api}/{version}/payments/
+        READById    --> GET     {root.api}/{version}/payments/id
+
+    #Customer
+        UPDATE      --> GET     {root.api}/{version}/payments/update/id
+                        POST    {root.api}/{version}/payments/update/id
