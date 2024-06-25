@@ -1,12 +1,96 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Rapidbootcamp\\mini and group project\\rental_car\\code\\Vehicle-Rental-Management-System\\VehicleRental\\",
-  "Documents": [],
+  "WorkspaceRootPath": "D:\\nabila\\Rapid\\Vehicle-Rental-Management-System\\VehicleRental\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C6D0926D-D1CF-490E-9012-ACE087F50CFF}|VehicleRentalApi\\VehicleRentalApi.csproj|d:\\nabila\\rapid\\vehicle-rental-management-system\\vehiclerental\\vehiclerentalapi\\models\\vehiclerentalcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6D0926D-D1CF-490E-9012-ACE087F50CFF}|VehicleRentalApi\\VehicleRentalApi.csproj|solutionrelative:vehiclerentalapi\\models\\vehiclerentalcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6D0926D-D1CF-490E-9012-ACE087F50CFF}|VehicleRentalApi\\VehicleRentalApi.csproj|d:\\nabila\\rapid\\vehicle-rental-management-system\\vehiclerental\\vehiclerentalapi\\vehiclerentalapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C6D0926D-D1CF-490E-9012-ACE087F50CFF}|VehicleRentalApi\\VehicleRentalApi.csproj|solutionrelative:vehiclerentalapi\\vehiclerentalapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6D0926D-D1CF-490E-9012-ACE087F50CFF}|VehicleRentalApi\\VehicleRentalApi.csproj|d:\\nabila\\rapid\\vehicle-rental-management-system\\vehiclerental\\vehiclerentalapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C6D0926D-D1CF-490E-9012-ACE087F50CFF}|VehicleRentalApi\\VehicleRentalApi.csproj|solutionrelative:vehiclerentalapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6D0926D-D1CF-490E-9012-ACE087F50CFF}|VehicleRentalApi\\VehicleRentalApi.csproj|d:\\nabila\\rapid\\vehicle-rental-management-system\\vehiclerental\\vehiclerentalapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C6D0926D-D1CF-490E-9012-ACE087F50CFF}|VehicleRentalApi\\VehicleRentalApi.csproj|solutionrelative:vehiclerentalapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VehicleRentalContext.cs",
+              "DocumentMoniker": "D:\\nabila\\Rapid\\Vehicle-Rental-Management-System\\VehicleRental\\VehicleRentalApi\\Models\\VehicleRentalContext.cs",
+              "RelativeDocumentMoniker": "VehicleRentalApi\\Models\\VehicleRentalContext.cs",
+              "ToolTip": "D:\\nabila\\Rapid\\Vehicle-Rental-Management-System\\VehicleRental\\VehicleRentalApi\\Models\\VehicleRentalContext.cs",
+              "RelativeToolTip": "VehicleRentalApi\\Models\\VehicleRentalContext.cs",
+              "ViewState": "AQIAAAMAAACIZmZmZmYkwA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T13:15:51.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\nabila\\Rapid\\Vehicle-Rental-Management-System\\VehicleRental\\VehicleRentalApi\\appsettings.json",
+              "RelativeDocumentMoniker": "VehicleRentalApi\\appsettings.json",
+              "ToolTip": "D:\\nabila\\Rapid\\Vehicle-Rental-Management-System\\VehicleRental\\VehicleRentalApi\\appsettings.json",
+              "RelativeToolTip": "VehicleRentalApi\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-25T12:15:50.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VehicleRentalApi",
+              "DocumentMoniker": "D:\\nabila\\Rapid\\Vehicle-Rental-Management-System\\VehicleRental\\VehicleRentalApi\\VehicleRentalApi.csproj",
+              "RelativeDocumentMoniker": "VehicleRentalApi\\VehicleRentalApi.csproj",
+              "ToolTip": "D:\\nabila\\Rapid\\Vehicle-Rental-Management-System\\VehicleRental\\VehicleRentalApi\\VehicleRentalApi.csproj",
+              "RelativeToolTip": "VehicleRentalApi\\VehicleRentalApi.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-25T12:14:44.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\nabila\\Rapid\\Vehicle-Rental-Management-System\\VehicleRental\\VehicleRentalApi\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "VehicleRentalApi\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\nabila\\Rapid\\Vehicle-Rental-Management-System\\VehicleRental\\VehicleRentalApi\\Properties\\launchSettings.json",
+              "RelativeToolTip": "VehicleRentalApi\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-25T12:14:35.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/VehicleRental/VehicleRentalApi/appsettings.json
+/VehicleRental/VehicleRentalApi/appsettings.Development.json
+/VehicleRental/VehicleRentalApi/appsettings.Development.json
